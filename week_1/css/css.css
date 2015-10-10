@@ -37,7 +37,7 @@ p{
 	background: #aaffaa;
 	width: 15%;
 	min-height: 200px;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 }
