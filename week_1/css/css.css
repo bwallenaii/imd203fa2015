@@ -22,9 +22,15 @@ p{
 	font-size: 0.95em;
 }
 
-div.pink-lady p{
+.pink-lady{
+	background: url('../images/halloween.jpg') fixed no-repeat;
+	padding: 2em 2em;
+}
+
+.pink-lady p{
 	color: #ffcccc;
 	background-color: black;
+	background-color: rgba(0,0,0,0.6);
 }
 
 #left-sidebar{
