@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Questionaire Example</title>
+		<script>
+			//brief quiz
+			var score = 0;
+			var popularBear = prompt("Who is the most popular cartoon bear?");
+			popularBear = popularBear.toLowerCase();
+			if(popularBear == "yogi" || popularBear == "booboo"){
+				alert("Correct!");
+				score++;
+			}else{
+				alert("What are you thinking?");
+			}
+			var bearColor = confirm("Bears can be black.\rOK for true, cancel for false");
+			var badBearColor = confirm("Bears can be purple.\rOK for true, cancel for false");
+			//bearColor ? alert("Correct!"):alert("Are you even trying?");
+			bearColor ? score++:null;
+			!badBearColor ? score++:null;
+			/*if(bearColor){
+				alert("Correct!");
+				score++;
+			}else{
+				alert("Are you even trying?");
+			}*/
+			
+			alert(score);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

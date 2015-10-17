@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>JS Examples</title>
+		<script>
+			var x = 12.000000001;
+			var y = 12;
+			var quote = "Jane said, \"Hi.\" \r\n \tI ignored her.";
+			var firstName = "Bob";
+			var lastName = "Whithers";
+			var fullName = firstName + " " + lastName;
+			var animal;
+			
+			/*if(x < y ){
+				alert("x is smaller");
+			}
+			else if(x > y){
+				alert("x is larger");
+			}
+			else{
+				alert("They are the same");	
+			}
+			alert(x);
+			alert(y);*/
+			animal = prompt("What is your favorite animal?");
+			
+			switch(animal.toLowerCase()){
+				case "monkey":
+					alert("oooh aaahhh!!");
+					break;
+				case "lion":
+				case "tiger":
+					alert("roar");
+					break;
+				case "crow":
+					alert("caw");
+					break;
+				default:
+					alert("hmmm.... I don't know that one.");
+					break;
+			}
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
