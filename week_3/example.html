@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+			var sandwiches = []; //all sandwich orders
+			var sandwich = {}; // a single sandwich
+			var anotherOrder = true;
+			
+			while(anotherOrder){
+				sandwich = {}; //create a new object in memory each time
+				
+				sandwich.meat = prompt("What meat would you like?");
+				sandwich.bread = prompt("What bread would you like?");
+				sandwich.toppings = prompt("What veggies would you like?");
+				
+				sandwiches.push(sandwich);
+				anotherOrder = confirm("Would you like another sandwich?");
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<script>
+			for(var i = 0; i < sandwiches.length;i++){
+				document.write("<hr />");
+				document.write("<p>Meat: " + sandwiches[i].meat + "</p>" );
+				document.write("<p>Bread: " + sandwiches[i].bread + "</p>" );
+				document.write("<p>Toppings: " + sandwiches[i].toppings + "</p>" );
+			}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+

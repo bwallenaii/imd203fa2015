@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+			var names = ["Bob", "Sally", "Fred"];
+			var names2 = "Harvey,Richard,Sarah,Mary";
+			var name = null;
+			names.push("Marcia");
+			names.pop();
+			console.log(names2);
+			names2 = names2.split(",");
+			console.log(names2);
+			for(var i = 0; i < names.length;i++){
+				console.log(i, names[i]);
+			}
+			
+			////On to Objects
+			var ob1 = {
+				"name":"George", 
+				"age": 22,
+				"weight-lbs": 153
+			};
+			//var query = prompt("Do you want to know the name, age, or weight?");
+			//alert(ob1[query]);
+			console.log(ob1);
+			ob1.occupation = prompt("What does " + ob1.name + " do?" );
+			console.log(ob1);
+		</script>
+	</head>
+	<body>
+		<h1>
+			My Names
+		</h1>
+		<script>
+			for(i = 0; i < names.length;++i){
+				document.write("<h2>" + names[i] + "</h2>");
+			}
+		</script>
+	</body>
+</html>
