@@ -1,0 +1,61 @@
+<html>
+	<head>
+		
+		<script>
+			
+			var cat = {
+				
+				name: "Bacon",
+				furType: "fluffy",
+				eyeColor: "red",
+				furColor: "Orange with black stripes",
+				says: "I want lasagna",
+				bodyType: "fat",
+				
+				eat: function(){
+					alert("yum");
+				},
+				sleep: function(){
+					alert("...");
+				},
+				poop: function(){
+					alert( this.name + " is stinky");
+				},
+				talk: function(){
+					console.log(this);
+					alert(this.says);
+				},
+				scratch: function(){
+					alert(this.name + " has ruined your couch.");
+				}
+				
+			};
+			
+			console.log(cat);
+			//cat.talk();
+			/*cat.eat();
+			cat.poop();
+			cat.talk();
+			cat.scratch();
+			cat.says = "puuurrrr";
+			cat.talk();*/
+			
+			window.addEventListener("load", function(){
+				var garfield = document.getElementById("cat");
+				garfield.addEventListener("click", cat.talk.bind(cat));
+			});
+		</script>
+		
+	</head>
+	<body>
+		<img id="cat" src="cat.jpg" />
+	</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
