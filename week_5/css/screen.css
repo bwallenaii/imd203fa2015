@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+body{
+	background-color: #222;
+	color: #eee;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+button, input[type=button]{
+	font-family: 'PT Sans Narrow', sans-serif;
+	border: none;
+	padding: 7px;
+}
+
+a{
+	color: ccccff;
+}
+
+.danger-click{
+	background-color: #c00;
+	color: #eee;
+}
+
+.monster{
+	color: #000;
+	background-color: #f00;
+}
