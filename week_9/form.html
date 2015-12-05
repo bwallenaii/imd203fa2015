@@ -1,0 +1,67 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+  <head>
+    <title>My Form</title>
+    <link href="css/screen.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="js/form.js"></script>
+  </head>
+  <body>
+    <form id="pizza-order" action="process.php" enctype="multipart/form-data" method="post">
+      <h1>
+        Pizza Order
+      </h1>
+      <input type="hidden" name="location" value="website" />
+      
+      <label>Name: <input id="customer-name" type="text" name="customer_name"  placeholder="Your full name" required /> </label>
+      <label>Address: <input type="text" name="customer_address" /></label>
+      <label>Phone: <input type="tel" name="customer_phone" /></label>
+      <label>E-mail: <input type="email" name="customer_email" required email /></label>
+      <label>Delivery Date: <input type="date" name="delivery_day" /></label>
+      <label>Delivery Time: <input type="time" name="delivery_time" /></label>
+      <label>Age: <input type="number" name="age" min="18" max="79" required /></label>
+      <h2>
+        Select Crust Type
+      </h2>
+      <label><input type="radio" name="crust" value="stuffed" data-price="9.00" /> Stuffed</label>
+      <label><input type="radio" name="crust" value="pretzel" data-price="6.00" /> Pretzel</label>
+      <label><input type="radio" name="crust" value="bacon" data-price="12.00" /> Bacon</label>
+      <label><input type="radio" name="crust" value="thin" data-price="2.50" /> Thin</label>
+      <label><input type="radio" name="crust" value="bagel" data-price="3.50" /> Bagel</label>
+      <label><input type="radio" name="crust" value="none" data-price="2.00" /> None</label>
+      
+      <h2>
+        Sauce
+      </h2>
+      <select name="sauce">
+        <option value="pizza" data-price="0.00" >The red stuff</option>
+        <option value="ranch" data-price="1.00">Ranch</option>
+        <option value="bbq" data-price="0.50">Barbecue</option>
+      </select>
+      <h2>
+        Toppings
+      </h2>
+      <label><input type="checkbox" name="toppings[]" value="bacon" data-price="1.00" />Crispy Bacon</label>
+      <label><input type="checkbox" name="toppings[]" value="pepperoni" data-price="0.50">Pepperoni</label>
+      <label><input type="checkbox" name="toppings[]" value="ham" data-price="0.50">Canadian Bacon</label>
+      <label><input type="checkbox" name="toppings[]" value="sausage" data-price="0.75">Sausage</label>
+      <label><input type="checkbox" name="toppings[]" value="chicken" data-price="1.00">Chicken</label>
+      <label><input type="checkbox" name="toppings[]" value="steak" data-price="1.50">Steak</label>
+      
+      <h2>
+        Additional Comments
+      </h2>
+      <textarea name="comments"></textarea>
+        <h3 id="total-price">
+            $0.00
+        </h3>
+      <button type="submit">
+        Order it!
+      </button>
+      <button type="reset">
+        Never Mind
+      </button>
+    </form>
+  </body>
+</html>

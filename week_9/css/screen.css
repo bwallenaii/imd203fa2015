@@ -1,0 +1,33 @@
+
+label{
+  display: block;
+  margin-top: 7px;
+  position: relative;
+}
+
+label input{
+  position: absolute;
+  top: 0;
+  left: 110px;
+}
+
+textarea{
+  display: block;
+  width: 250px;
+  height: 100px;
+  resize: vertical;
+}
+
+span.error{
+  display: block;
+  color: #dd0000;
+  margin-left: 15px;
+  position: absolute;
+  left: 270px;
+  top: 0;
+}
+
+/*.valid{
+  border-color: #00dd00;
+  color: #00dd00;
+}*/
